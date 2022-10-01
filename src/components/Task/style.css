@@ -1,0 +1,40 @@
+.task {
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-options {
+    display: flex;
+}
+
+.task-description {
+    border: 0;
+    background-color: transparent;
+    font-family: "Inter", Times, serif;
+    font-size: 18px;
+    width: 90%;
+}
+
+.change-status {
+    cursor: pointer;
+    height: 100%;
+    width: 32px;
+    margin: 0px 5px 0px 0px;
+}
+
+.delete-button {
+    cursor: pointer;
+    padding: 0;
+    height: 100%;
+    width: 32px;
+    margin: 0;
+    background-color: white;
+}
+
+.delete-button-icon {
+    font-size: 24px;
+}
