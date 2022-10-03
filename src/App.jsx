@@ -5,6 +5,9 @@ import { useState } from 'react'
 
 function App() {
   const [tasks, setTasks] = useState([])
+  const [filterStatus, setFilterStatus] = useState(0)
+
+  /* Apenas para gerar um ID único (simulando um auto-increment) */
   const [count, setCounter] = useState(1)
 
   const addNewTask = () => {
@@ -37,10 +40,14 @@ function App() {
     setTasks(copyTasks)
   }
 
+  const filterTasks = (status) => {
+    setFilterStatus(status.value)
+  }
+
   return (
     <>
       <Header />
-      <Menu onAddButtonClick={() => addNewTask()} />
+      <Menu onAddButtonClick={() => addNewTask()} filterTasks={(status) => filterTasks(status)} />
       {tasks.map((task) =>
         <Task
           key={'key' + task.id}
@@ -49,7 +56,8 @@ function App() {
           id={task.id}
           deleteTask={(taskId) => deleteTask(taskId)}
           changeStatus={(taskId) => changeStatus(taskId)}
-          editValue={(taskId, desc) => editValue(task.id, desc)}
+          editValue={(taskId, desc) => editValue(taskId, desc)}
+          filterStatus={filterStatus}
         />
       )}
     </>

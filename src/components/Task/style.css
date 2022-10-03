@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.none {
+    display: none;
+}
+
 .task-description {
     border: 0;
     background-color: transparent;
