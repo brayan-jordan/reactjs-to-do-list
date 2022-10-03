@@ -20,9 +20,10 @@ function Menu({ onAddButtonClick, filterTasks }) {
     return (
         <div id='menu'>
             <button id='add-new-button' onClick={() => onAddButtonClick()}>
-                <span>Add new</span>
+                <span className='add-new-button-text'>Add new task</span>
             </button>
             <Select
+                className='filter-tasks'
                 options={statusFilter}
                 onChange={(v1) => {
                     filterTasks(v1)

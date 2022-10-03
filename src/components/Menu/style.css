@@ -1,6 +1,6 @@
 #menu {
     width: 500px;
-    height: 30px;
+    height: 36px;
     margin: 10px auto 0;
     padding: 5px;
     display: flex;
@@ -8,7 +8,27 @@
 }
 
 #add-new-button {
+    background-color: #5F6F94;
+    border-radius: 5px;
     height: 100%;
     margin: 0;
-    padding: 0 5px 0 5px;
+    padding: 0 8px 0 8px;
+    border: 0;
+    cursor: pointer;
 }
+
+#add-new-button:hover {
+    transition: 0.2s;
+    background-color: #4b5875;
+}
+
+.add-new-button-text {
+    color: white;
+    font-family: "Inter", Times, serif;
+    font-weight: 700;
+}
+
+.filter-tasks {
+    width: 150px;
+}
+

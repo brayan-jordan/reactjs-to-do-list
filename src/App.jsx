@@ -17,7 +17,7 @@ function App() {
       {
         id: count,
         isSelected: false,
-        description: 'Task'
+        description: 'what is to be done?'
       },
     ]);
   };

@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.unfocused {
+    opacity: 0.6;
+}
+
 .none {
     display: none;
 }
@@ -23,11 +27,21 @@
     width: 90%;
 }
 
+.task-description:focus {
+    outline: none;
+    font-size: 19px;
+}
+
+.task-description:hover {
+    font-size: 19px;
+}
+
 .change-status {
     cursor: pointer;
     height: 100%;
     width: 32px;
     margin: 0px 5px 0px 0px;
+    accent-color: green
 }
 
 .delete-button {
@@ -37,6 +51,16 @@
     width: 32px;
     margin: 0;
     background-color: white;
+    padding: 2px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #8f0000;
+    transition: 0.4s;
 }
 
 .delete-button-icon {
