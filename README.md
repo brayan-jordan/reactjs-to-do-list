@@ -1,12 +1,11 @@
-#Desenvolver um TODO list
+#Simple TODO List using ReactJS 
 
-Pré requisitos:
+To build application:
 
-- Adicionar infinitos valores na lista
-- Marcar/desmarcar itens concluídos
-- Excluir itens da lista
-- Editar itens da lista
-- Filtro com as opções: (Todos, finalizados, pendentes)
-- Conter ao menos 3 componentes
+-npm install
+-npm run dev
 
+(my node version: 16.17.1)
+
+colors base:
 https://colorhunt.co/palette/25316d5f6f9497d2ecfef5ac
